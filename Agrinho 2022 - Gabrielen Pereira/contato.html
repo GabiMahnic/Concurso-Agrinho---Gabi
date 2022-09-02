@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Contato - Barbearia Alura</title>
+		<link rel="shortcut icon" type="image/x-icon" href="/pata-cachorro.ico">
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="envioformulario.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="teste-logo.png" class="teste-img"></h1>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Página inicial</a></li>
+						<li><a href="apoio.html">Apoie-nos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<form>
+				<label for="nomesobrenome">Nome e sobrenome</label>
+				<label>Caso queira não se identificar, envie como "Anônimo".</label>
+				<input type="text" id="nomeid" class="input-contato" >
+
+
+				<label for="telefone">Telefone</label>
+				<input type="tel" id="telefone" class="input-contato"  placeholder="(XX) XXXXX-XXXX">
+
+				<label for="mensagem">Mensagem</label>
+				<textarea  id="mensagem" class="input-contato" ></textarea>
+
+				<fieldset>
+					<legend>Como prefere o nosso contato?</legend>
+					
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+					
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+				</fieldset>
+
+				<input type="submit" value="Enviar formulário" class="enviar" onclick="Enviar()">
+			</form>
+		</main>
+
+		<footer>
+			<img src="teste-logo.png" width="10%">
+			<p class="copyright">&copy; ONG - São Francisco de Assis - Site desenvolvido apenas para cunho educacional.</p>
+		</footer>
+	</body>
+</html>
